@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pamela Lim</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    header {
+      font-family:'Bradley Hand ITC';
+      font-size: 40px;
+      color: black;
+      text-align: center;
+      margin: 20px;
+      animation-name: header_fadein;
+      animation-duration: 2s;  
+      animation-fill-mode: forwards;
+    }
+    @keyframes header_fadein {
+        from {color:black}
+        to {color:white;}
+    }
+
+    .work {
+        /*border-radius: 25px;*/
+        position: relative;
+        top: 200px;
+        background-color:rgb(8, 48, 5);
+        height: 400px;
+        width: 1200px;
+        border: 7px solid rgb(182, 202, 183);
+        padding: 20px;
+        color:white
+    }
+    ul.a {list-style-type: circle;}
+
+
+    .hello {
+        position: relative;
+        left: 1000px;
+        border-radius: 25px;
+        background-color:rgb(31, 31, 75);
+        height: 300px;
+        width: 150px;
+        border: 7px solid rgb(72, 236, 223);
+        padding: 50px;
+        /*margin-left: 1600px;*/
+        animation-name: slideMotion;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        color:white
+    }
+    .program_work {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+
+
+    @keyframes slideMotion {
+        to { transform: translateX(-400px); }    
+    }
+    .slide_box {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+    }
+</style>
+</head>
+<body style="background-color:black">
+    
+
+<header>
+    <h2>Pamela Lim</h2>
+</header>
+
+<div class="hello">
+    Hello! I am a sophomore studying computer science
+    at The University of Texas at Austin.
+</div>
+
+<div class = "work"></div>
+
+
+<!--
+<div class="work">
+    <ul class="a">
+        Worked with C software to add new features to medical devices
+        
+        <p>Programming Work</p>
+        
+        <li>
+            Worked with patient remote control that controlled 
+            settings for medical pulse stimulator
+        </li>
+        <li>
+            Worked with implantable medical stimulator that generated 
+            a pulse to help patients with chronic pain
+        </li>
+        <li> 
+            Programmed patient remote control to measure resistances 
+            of implantable stimulator resistors and respond accordingly 
+            both visually and audibly
+        </li>
+        <li>
+            Programmed patient remote control to enter MRI compatible mode 
+            in a manner specifically requested by a client
+        </li>
+        <li>
+            Utilized LabVIEW to create a program to convert a stimulator’s data from binary to human readable text
+        </li>
+
+        <p>Testing Work</p>
+        <li>
+            Modified software in C in order to create necessary test cases for device testing
+        </li>
+        <li>
+            Performed dry-run, integration, and unit testing on software for pulse stimulators
+        </li>
+        <li>
+            Helped write verification protocol for testing of stimulator software
+        </li>
+      </ul>
+</div>
+
+</body>
+</html>
