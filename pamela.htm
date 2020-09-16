@@ -81,8 +81,78 @@
         cursor: pointer;
     }
 
+    ul.a {
+        position: absolute;
+        top: 100px;
+        list-style-type: circle;
+        }
+
+    .contact {
+        position: absolute;
+        top: 250px;
+        left: 0px;
+        background-color:rgb(100, 100, 124);
+        height: 300px;
+        width: 400px;
+        padding: 50px;
+        color:white;
+        text-align: center;
+        font-family: 'Comic Sans MS';
+    }
+
+    img {
+        border-radius: 50%;
+    }
+    .pic {
+        position: absolute;
+        top: 300px;
+        left: 620px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .triangle-right {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0;
+	    height: 0;
+	    border-left: 250px solid transparent;
+	    border-right: 250px solid transparent;
+	    border-top: 170px solid #555;
+    }
+
+    .contact_title {
+        position: absolute;
+        top: 30px;
+        left: 180px;
+        width: 0;
+	    height: 0;
+        color:white;
+        font-size: 40px;
+    }
+
+
+    .hello {
+        position: absolute;
+        top: 250px;
+        left: 1100px;
+        font-family: 'Courier New';
+        border-radius: 25px;
+        background-color:rgb(31, 31, 75);
+        height: 300px;
+        width: 150px;
+        border: 7px solid rgb(72, 236, 223);
+        padding: 50px;
+        animation-name: jiggle;
+        animation-duration: 0.3s;
+        animation-iteration-count: 2.5;
+        animation-timing-function: ease-out;
+        color:white;
+    }
+
     .V_title {
-        font-family: 'Imprint MT Shadow';
+        font-family: 'Segoe UI';
         font-size:40px;
         line-height: 0.001;
     }
@@ -92,108 +162,123 @@
     }
 
     .work {
-        /*border-radius: 25px;*/
         position: absolute;
         top: 800px;
-        left: 50px;
-        background-color:rgb(8, 48, 5);
+        left: 0px;
+        background-color:rgb(47, 52, 68);
         height: 600px;
-        width: 1350px;
-        border: 7px solid rgb(182, 202, 183);
+        width: 1475px;
         padding: 20px;
         text-align: center;
         color:white
     }
-    ul.a {list-style-type: circle;}
 
-    .contact {
-        position: absolute;
-        top: 250px;
-        left: 0px;
-       /* border-radius: 25px;*/
-        background-color:rgb(100, 100, 124);
-        height: 300px;
-        width: 350px;
-        padding: 50px;
-        color:white;
-    }
-
-    .pic {
-        position: absolute;
-        top: 300px;
-        left: 620px;
-        height: 300px;
-        width: 300px;
-    }
-
-    .hello {
-        position: absolute;
-        top: 250px;
-        left: 1100px;
-        border-radius: 25px;
-        background-color:rgb(31, 31, 75);
-        height: 300px;
-        width: 150px;
-        border: 7px solid rgb(72, 236, 223);
-        padding: 50px;
-        /*margin-left: 1600px;*/
-        animation-name: jiggle;
-        animation-duration: 0.3s;
-        animation-iteration-count: 2.5;
-        animation-timing-function: ease-out;
-        /*animation-fill-mode: forwards;*/
-        color:white;
-    }
     .program_work {
         position: absolute;
-        font-family: 'Cambria';
-        font-size:14px;
-        left: 50px;
-        top: 140px;
-        height: 450px;
-        width: 600px;
-        padding: 5px;
+        font-family: 'Calibri';
+        font-size:16px;
+        left: 70px;
+        top: 160px;
+        height: 380px;
+        width: 600px;        
+        padding: 20px;
         text-align:left;
-        line-height: 1.6;
+        line-height: 2.0;
         background-color:black;
-        color: white;
+        color:rgb(12, 184, 12);
     }
 
     .test_work {
         position: absolute;
-        font-family: 'Cambria';
-        left: 710px;
-        top: 140px;
-        height: 450px;
+        font-family: 'Calibri';
+        font-size:16px;
+        left: 800px;
+        top: 160px;
+        height: 380px;
         width: 600px;
-        padding: 5px;
+        padding: 20px;
         text-align:left;
-        line-height: 1.3;
+        line-height: 2.0;
         background-color:black;
-        color: white;
+        color:rgb(12, 184, 12);
+    }
+    .work_title_p {
+        position: absolute;
+        font-family: 'Courier New';
+        font-size: 40px;
+        line-height: 1.3;
+        left: 100px;
+        top: 30px;
+        color: rgb(28, 107, 226);
+    }
+
+    .work_title_t {
+        position: absolute;
+        font-family: 'Courier New';
+        font-size: 40px;
+        line-height: 1.3;
+        left: 150px;
+        top: 30px;
+        color: rgb(28, 107, 226);
     }
 
     .languages {
         position: absolute;
-        top: 1600px;
-        left: 500px;
-        background-color:rgb(75, 213, 223);
-        height: 500px;
-        width: 400px;
+        font-family: 'Courier New';
+        font-size: 20px;
+        line-height: 2.3;
+        top: 1800px;
+        left: 200px;
+        background-color: black;
+        height: 400px;
+        width: 200px;
         padding: 50px;
         color:white;
     }
 
-    .coursework {
+    .languages_title {
         position: absolute;
-        top: 2400px;
-        left: 500px;
-        background-color:rgb(75, 213, 223);
-        height: 400px;
-        width: 400px;
+        font-family: 'Courier New';
+        text-decoration-line: underline;
+        font-size: 40px;
+        top: 1800px;
+        left: 200px;
+        background-color: black;
+        height: 50px;
+        width: 200px;
         padding: 50px;
         color:white;
     }
+
+
+    .coursework {
+        position: absolute;
+        top: 1850px;
+        left: 800px;
+        font-family: 'Courier New';
+        font-size: 20px;
+        line-height: 2.3;
+        background-color:black;
+        height: 400px;
+        width: 300px;
+        padding: 50px;
+        color:white;
+    }
+
+    .coursework_title {
+        position: absolute;
+        font-family: 'Courier New';
+        text-decoration-line: underline;
+        font-size: 40px;
+        top: 1800px;
+        left: 800px;
+        background-color: black;
+        height: 50px;
+        width: 200px;
+        padding: 50px;
+        color:white;
+    }
+
 
     @keyframes jiggle {
         50%  {transform: rotate(20deg);}
@@ -214,6 +299,7 @@
       position: absolute;
       top: 3200px;
       width:1505px;
+      height: 300px;
       font-family:'Bradley Hand ITC';
       padding: 3px;
       background-color:cyan;
@@ -232,13 +318,18 @@
     function courseScroll() {
         document.documentElement.scrollTop = 2300;
     }
+    function fade() {
+        /*$("#div1").fadeIn();*/
+        $("#block").fadeIn("slow");
+        /*$("#div3").fadeIn(3000);*/
+    }
 </script>
 </head>
 <body style="background-color:black">
     
 
 <header>
-    <h2>Pamela Lim</h2>
+    <h1>Pamela Lim</h1>
 </header>
 
 <button class = "workButton" onclick="workScroll()">
@@ -261,7 +352,7 @@
 
 
 <div class="hello">
-    Hello! I am a sophomore studying computer science
+    Hello! I am a computer science major studying
     at The University of Texas at Austin.
 </div>
 
@@ -269,8 +360,19 @@
     <img src="LinkedIn.jpg" width="300" height="300">
 </div>
 
-<div class = "contact">
-
+<div id = "block" class = "contact">
+    <p>
+        <br><br><br><br><br><br>
+        pamelamkpk2015@gmail.com <br><br>
+        832-228-7183<br><br>
+        https://www.linkedin.com/in/pamela-lim-539066194 <br><br>
+        https://github.com/pamelamkpk
+    </p>
+    <div class = "triangle-right">
+    </div>
+    <div class = "contact_title">
+        Contact
+    </div>
 </div>
 
 <div class = "work">
@@ -281,11 +383,10 @@
         <p>Programmed and tested medical device software</p>
     </div>
     <div class = "program_work">
-        <ul class="a">
-            Worked with C software to add new features to medical devices
-            
-            <p>Programming Work</p>
-            
+        <div class = "work_title_p">
+            Programming Work
+        </div>
+        <ul class="a">            
             <li>
                 Worked with patient remote control that controlled 
                 settings for medical pulse stimulator
@@ -309,126 +410,87 @@
     
     </div>
     <div class = "test_work">
-
+        <div class = "work_title_t">
+            Testing Work
+        </div>
+        <ul class="a">            
+            <li>
+                Modified software in C in order to create necessary test cases for device testing
+            </li>
+            <li>
+                Performed dry-run, integration, and unit testing on software for pulse stimulators
+            </li>
+            <li> 
+                Helped write verification protocol for testing of stimulator software
+            </li>
+        </ul>
     </div>
 </div>
 
 <div class = "languages">
-
+    <ul class="a">            
+        <li>
+            Java
+        </li>
+        <li>
+            C
+        </li>
+        <li> 
+            HTML
+        </li>
+        <li> 
+            CSS
+        </li>
+        <li> 
+            JavaScript
+        </li>
+        <li> 
+            jQuery
+        </li>
+        <li> 
+            Python
+        </li>
+        <li> 
+            C++
+        </li>
+    </ul>
+</div>
+<div class = "languages_title">
+    <p>
+        Languages
+    </p>
 </div>
 
 <div class = "coursework">
-
-</div>
-
-
-<footer>
-</footer>
-
-<!--
-<div class="work">
-    <ul class="a">
-        Worked with C software to add new features to medical devices
-        
-        <p>Programming Work</p>
-        
+    <ul class="a">            
         <li>
-            Worked with patient remote control that controlled 
-            settings for medical pulse stimulator
+            Data Structures
         </li>
         <li>
-            Worked with implantable medical stimulator that generated 
-            a pulse to help patients with chronic pain
+            Discrete Math
         </li>
         <li> 
-            Programmed patient remote control to measure resistances 
-            of implantable stimulator resistors and respond accordingly 
-            both visually and audibly
+            Computer Architecture
         </li>
-        <li>
-            Programmed patient remote control to enter MRI compatible mode 
-            in a manner specifically requested by a client
+        <li> 
+            Operating Systems
         </li>
-        <li>
-            Utilized LabVIEW to create a program to convert a stimulator’s data from binary to human readable text
+        <li> 
+            Matrices
         </li>
-
-        <p>Testing Work</p>
-        <li>
-            Modified software in C in order to create necessary test cases for device testing
+        <li> 
+            Robot Learning
         </li>
-        <li>
-            Performed dry-run, integration, and unit testing on software for pulse stimulators
-        </li>
-        <li>
-            Helped write verification protocol for testing of stimulator software
-        </li>
-      </ul>
+    </ul>
 </div>
--->
+<div class = "coursework_title">
+    <p>
+        Coursework
+    </p>
+</div>
 
-<!--       
-
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
-<button>Click me to hide paragraphs</button>
-
-<p>Scrolled <span>0</span> times.</p>
-
-<h1 style="font-family:Lucida Sans", style="color:azure">My First Heading</h1>
-<p title="I'm a tooltip">My first paragraph.</p>
-
-<h2>My Second Heading</h2>
-<p style="color:lightseagreen">My SECOND paragraph.</p>
-
-<h3>My third Heading</h3>
-
-<a href="https://www.w3schools.com">W3schools</a>
-
-<p style="color:brown">This is a <br> paragraph with a line break.</p>
-
-<a href="https://www.adventuresinodyssey.com/">AIO!!!</a>
-<br>
-
-<img src="Profile picture canvas.jpg" width="200" height="200">
-
-<p style="color:crimson;">This is an AQUa paragraph.</p>
-
-<pre>
-    "I am not throwin' away my shot!"
- 
-    "I know my sister like I know my own mind."
- 
-    "ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE"
-    
-    "Some things never change :)"
- </pre>
-
- <p style="font-size:160%;">Paragraph w/ bigger font.</p>
-
- <p>Here is a quote from WWF's website:</p>
- <blockquote cite="http://www.worldwildlife.org/who/index.html">
- For 50 years, WWF has been protecting the future of nature.
- The world's leading conservation organization,
- WWF works in 100 countries and is supported by
- 1.2 million members in the United States and
- close to 5 million globally.
- </blockquote>
-
- <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-
- <address>
-    Written by John Doe.<br>
-    Visit us at:<br>
-    Example.com<br>
-    Box 564, Disneyland<br>
-    USA
-    </address>
-
-    <h1 style="border:2px solid Violet;">Hello World</h1>
--->
-    
+<footer>
+</footer>    
 
 </body>
 </html>
