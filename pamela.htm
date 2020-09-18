@@ -98,6 +98,7 @@
         color:white;
         text-align: center;
         font-family: 'Comic Sans MS';
+        opacity: 0;
     }
 
     img {
@@ -109,6 +110,7 @@
         left: 620px;
         height: 300px;
         width: 300px;
+        opacity: 0;
     }
 
     .triangle-right {
@@ -149,6 +151,7 @@
         animation-iteration-count: 2.5;
         animation-timing-function: ease-out;
         color:white;
+        opacity: 0;
     }
 
     .V_title {
@@ -170,7 +173,8 @@
         width: 1475px;
         padding: 20px;
         text-align: center;
-        color:white
+        color:white;
+        opacity: 0;
     }
 
     .program_work {
@@ -234,6 +238,7 @@
         width: 200px;
         padding: 50px;
         color:white;
+        opacity: 0;
     }
 
     .languages_title {
@@ -248,6 +253,7 @@
         width: 200px;
         padding: 50px;
         color:white;
+        opacity: 0;
     }
 
 
@@ -263,6 +269,7 @@
         width: 300px;
         padding: 50px;
         color:white;
+        opacity: 0;
     }
 
     .coursework_title {
@@ -277,6 +284,7 @@
         width: 200px;
         padding: 50px;
         color:white;
+        opacity: 0;
     }
 
 
@@ -318,11 +326,29 @@
     function courseScroll() {
         document.documentElement.scrollTop = 2300;
     }
-    function fade() {
-        /*$("#div1").fadeIn();*/
-        $("#block").fadeIn("slow");
-        /*$("#div3").fadeIn(3000);*/
-    }
+    $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $(".hello, .contact, .pic, .work, .languages, .languages_title, .coursework, .coursework_title").each( function(){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
 </script>
 </head>
 <body style="background-color:black">
@@ -360,7 +386,7 @@
     <img src="LinkedIn.jpg" width="300" height="300">
 </div>
 
-<div id = "block" class = "contact">
+<div class = "contact">
     <p>
         <br><br><br><br><br><br>
         pamelamkpk2015@gmail.com <br><br>
